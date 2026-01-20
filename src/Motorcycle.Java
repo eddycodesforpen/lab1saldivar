@@ -1,12 +1,12 @@
-public class Motorcycle {
+public class Motorcycle{
 
-    private final String colorA;
-    private String color1;
+    private String colorA;
 
     public Motorcycle(String color1){
         this.colorA = color1;
     }
 
-    public String getcolor(){
-        return this colorA;
-
+    public String getColor(){
+        return colorA;
+    }
+}
