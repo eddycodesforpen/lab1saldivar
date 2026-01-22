@@ -6,6 +6,9 @@ public class Main {
         Motorcycle m2 = new Motorcycle("RED");
         System.out.println(m2.getColor());
 
+        Engine myeng = new Engine("650");
+        System.out.println(myeng.getCC());
+        Engine myeng2 = new Engine ("670",  "400")
     }
 
 }
