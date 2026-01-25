@@ -1,3 +1,14 @@
+/**
+ * Edward saldivar project.
+ /**
+
+ * Project:Motorcycle
+ * Purpose Details: make 3 MotorCycles
+ * Course:IST 242
+ * Author:Edward
+ * Date Developed:01/23/2025
+ * Last Date Changed:01/24/25
+ * Revision:now */;
 public class Main {
     public static void main(String[] args) {
         Motorcycle myCycle = new Motorcycle("white", 80.9, Material.Ti, 55.3);
