@@ -1,12 +1,49 @@
-public class Motorcycle{
+class Motorcycle {
 
-    private String colorA;
+    private String color;
 
-    public Motorcycle(String color1){
-        this.colorA = color1;
+    private double size;
+    private Frame frame;
+    private Wheel[] wheels;
+
+
+    public Motorcycle(String color, double size, Material frameMaterial, double wheelSize) {
+        this.color = color;
+        this.size = size;
+        this.frame = new Frame(frameMaterial);
+        this.wheels = new Wheel[2];
+        this.wheels[0] = new Wheel(wheelSize);
+        this.wheels[1] = new Wheel(wheelSize);
     }
 
     public String getColor(){
-        return colorA;
+        return color;
+    }
+
+    public void setColor(String color){
+        this.color = color;
+    }
+
+    public double getSize(){
+        return size;
+    }
+
+    public void setSize(double size){
+        this.size = size;
+    }
+
+    public Material getFrameMaterial(){
+        return frame.getMaterial();
+    }
+
+    public double getWheelSize(){
+        return wheels[0].getSize();
+    }
+
+    public void start() {
+        System.out.println("Motorcycle started");
+    }
+    public void stop() {
+        System.out.println("Motorcycle stopped.");
     }
 }

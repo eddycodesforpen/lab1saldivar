@@ -1,4 +1,4 @@
   enum Material {
     STEEL, ALUMINUM, CARBON_FIBER, Ti
 }
-}
+
